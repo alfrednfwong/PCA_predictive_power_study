@@ -1,0 +1,10 @@
+Z-Alizadeh SaniDataset User Agreement
+
+I agree with following items.
+•	To cite  Z-Alizadeh Sani Dataset in any paper of mine or my collaborators that makes any use of the database. The reference is:
+
+1.	R. Alizadehsani et al., “A data mining approach for diagnosis of coronary artery disease,” Computer Methods and Programs in Biomedicine, vol.111, no.1, pp.52-61, Jul. 2013.
+2.	R. Alizadehsani, M.H. Zangooei, M.J. Hosseini, J. Habibi, A. Khosravi, M. Roshanzamir, F. Khozeimeh, N. Sarrafzadegan, S. Nahavandi, Coronary artery disease detection using computational intelligence methods, Knowledge-Based Systems, 109 (2016) 187-197
+3.	Z. Arabasadi, R. Alizadehsani, M. Roshanzamir, H. Moosaei, and A. A. Yarifard, "Computer aided decision making for heart disease detection using hybrid neural network-Genetic algorithm," Computer Methods and Programs in Biomedicine, vol. 141, pp. 19-26, 2017/04/01/ 2017.
+
+•	To use the dataset for research purposes only.
