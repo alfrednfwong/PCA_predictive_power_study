@@ -27,8 +27,8 @@ def compare_classification_features(
     # "soft voting" << such a misleading term.
     # since we'll have few features, we don't need much regularization,
     # so we are leaving the C pretty large here.
-    #     svc = SVC(kernel='rbf', probability=True, random_state=random_state,
-    #               C=1000)
+    svc = SVC(kernel='rbf', probability=True, random_state=random_state,
+              C=1000)
     # we'll use standardized data, intercept is not necessary
     #     lsvc = SVC(kernel='linear', probability=True,
     #                random_state=random_state, C=1000)
@@ -39,7 +39,7 @@ def compare_classification_features(
     knn = KNeighborsClassifier(n_neighbors=20, weights='distance')
 
     eclf = VotingClassifier(
-        estimators=[('rfc', rfc), ('lr', lr),
+        estimators=[('svc', svc), ('rfc', rfc), ('lr', lr),
                     ('knn', knn)],
         voting='soft'
     )
