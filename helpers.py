@@ -194,13 +194,13 @@ def cross_validate_ensemble(
     # so we are leaving the C pretty large here.
     svc = SVC(kernel='rbf', probability=True, random_state=random_state,
               C=1000)
-    # we'll use standardized data, intercept is not necessary
-    #     lsvc = SVC(kernel='linear', probability=True,
-    #                random_state=random_state, C=1000)
-    rfc = RandomForestClassifier(n_estimators=100,
-                                 random_state=random_state)
-    lr = LogisticRegression(C=1000, random_state=random_state,
-                            solver='liblinear', max_iter=500,)
+    rfc = RandomForestClassifier(
+        n_estimators=100, random_state=random_state
+    )
+    lr = LogisticRegression(
+        C=1000, random_state=random_state, solver='liblinear', max_iter=500,
+        class_weight='balanced'
+    )
     knn = KNeighborsClassifier(n_neighbors=20, weights='distance')
 
     eclf = VotingClassifier(
@@ -208,11 +208,6 @@ def cross_validate_ensemble(
                     ('knn', knn)],
         voting='soft'
     )
-    # eclf = VotingClassifier(
-    #     estimators=[('rfc', rfc), ('lr', lr),
-    #                 ('knn', knn)],
-    #     voting='soft'
-    # )
 
     kf = KFold(n_splits=num_folds, random_state=random_state, shuffle=True)
     # loop thru sets of features
