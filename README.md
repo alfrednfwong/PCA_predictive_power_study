@@ -8,5 +8,5 @@ Part 2, PCA_emipiricals.ipynb, aims at finding out, empirically, whether higher 
 PCAs are conducted to get two groups of PCs, the first 5 by the explained variance, and the 6th to 10th.
 An ensemble model with 10 fold cross validation is trained on each PC group and their AUC scores are compared.
 
-Available on medium: [Part 1](https://medium.com/digital-alchemist/principal-component-analysis-does-higher-explained-variance-mean-more-predictive-power-f59606ed1e7)
+Available on medium: [Part 1](https://medium.com/digital-alchemist/principal-component-analysis-does-higher-explained-variance-mean-more-predictive-power-f59606ed1e7), [Part 2](https://medium.com/digital-alchemist/principal-component-analysis-does-higher-explained-variance-mean-more-predictive-power-24d888478807)
 
